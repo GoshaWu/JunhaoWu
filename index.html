@@ -30,7 +30,7 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#home" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">首页</a>
                     <a href="#experience" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">经历与教学</a>
-                    <a href="#projects" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">科研项目</a>
+                    <a href="#projects" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">教改与科研项目</a>
                     <a href="#publications" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">学术论文</a>
                     <a href="#patents" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">专利与获奖</a>
                 </div>
@@ -50,7 +50,7 @@
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#home" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50">首页</a>
                 <a href="#experience" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50">经历与教学</a>
-                <a href="#projects" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50">科研项目</a>
+                <a href="#projects" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50">教改与科研项目</a>
                 <a href="#publications" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50">学术论文</a>
                 <a href="#patents" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50">专利与获奖</a>
             </div>
@@ -61,188 +61,89 @@
         
         <!-- Hero Section (个人信息区) -->
         <section id="home" class="pt-8 md:pt-16 pb-8 scroll-mt-24">
-            <div class="flex flex-col md:flex-row gap-8 items-center md:items-start bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
-                <!-- 头像 -->
-                <div class="w-48 h-48 md:w-56 md:h-56 shrink-0 bg-gradient-to-br from-blue-100 to-slate-200 rounded-full flex items-center justify-center shadow-inner overflow-hidden border-4 border-white">
-                    <img src="https://github.com/GoshaWu.png" alt="吴俊豪" class="w-full h-full object-cover" />
-                </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 flex flex-col gap-8">
                 
-                <!-- 简介 -->
-                <div class="flex-1 space-y-6 text-center md:text-left">
-                    <div>
-                        <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2">吴俊豪</h1>
-                        <p class="text-xl text-blue-700 font-medium">讲师 / 博士</p>
+                <!-- 上半部分：头像与基本信息 -->
+                <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+                    <!-- 头像 -->
+                    <div class="w-48 h-48 md:w-56 md:h-56 shrink-0 bg-gradient-to-br from-blue-100 to-slate-200 rounded-full flex items-center justify-center shadow-inner overflow-hidden border-4 border-white">
+                        <img src="https://github.com/GoshaWu.png" alt="吴俊豪" class="w-full h-full object-cover" />
                     </div>
-
-                    <div class="flex flex-col md:flex-row gap-4 md:gap-8 justify-center md:justify-start text-slate-600">
-                        <div class="flex items-center justify-center md:justify-start gap-2">
-                            <i data-lucide="mail" class="text-blue-500 w-5 h-5"></i>
-                            <a href="mailto:junhwu@stu.edu.cn" class="hover:text-blue-700 transition-colors">junhwu@stu.edu.cn</a>
+                    
+                    <!-- 简介 -->
+                    <div class="flex-1 space-y-6 text-center md:text-left flex flex-col justify-center py-2">
+                        <div>
+                            <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2">吴俊豪</h1>
+                            <p class="text-xl text-blue-700 font-medium">讲师 / 博士</p>
                         </div>
-                        <div class="flex items-center justify-center md:justify-start gap-2">
-                            <i data-lucide="map-pin" class="text-blue-500 w-5 h-5"></i>
-                            <span>汕头大学东海岸校区实验楼D-516</span>
-                        </div>
-                    </div>
 
-                    <div class="space-y-4 pt-4 border-t border-slate-100 text-sm md:text-base">
-                        <div class="flex flex-col md:flex-row gap-2">
-                            <span class="font-semibold text-slate-800 w-24 shrink-0 flex items-center gap-1.5 justify-center md:justify-start">
-                                <i data-lucide="lightbulb" class="w-4 h-4 text-amber-500"></i> 研究方向：
-                            </span>
-                            <div class="flex flex-wrap gap-2 justify-center md:justify-start">
-                                <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">医学图像配准</span>
-                                <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">并行计算性能分析</span>
-                                <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">分类算法优化</span>
+                        <div class="flex flex-col gap-3 text-slate-600">
+                            <div class="flex items-center justify-center md:justify-start gap-2">
+                                <i data-lucide="mail" class="text-blue-500 w-5 h-5"></i>
+                                <a href="mailto:junhwu@stu.edu.cn" class="hover:text-blue-700 transition-colors">junhwu@stu.edu.cn</a>
                             </div>
-                        </div>
-                        <div class="flex flex-col md:flex-row gap-2">
-                            <span class="font-semibold text-slate-800 w-24 shrink-0 flex items-center gap-1.5 justify-center md:justify-start">
-                                <i data-lucide="book-open" class="w-4 h-4 text-emerald-500"></i> 研究领域：
-                            </span>
-                            <div class="flex flex-wrap gap-2 justify-center md:justify-start text-slate-600">
-                                医学图像处理 • 高性能计算 • 机器学习与深度学习算法
+                            <div class="flex items-center justify-center md:justify-start gap-2">
+                                <i data-lucide="map-pin" class="text-blue-500 w-5 h-5"></i>
+                                <span>汕头大学东海岸校区实验楼D-516</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- 下半部分：研究方向与领域 -->
+                <div class="space-y-4 pt-6 border-t border-slate-100 text-sm md:text-base">
+                    <div class="flex flex-col md:flex-row gap-2 md:items-center">
+                        <span class="font-semibold text-slate-800 whitespace-nowrap w-28 shrink-0 flex items-center gap-1.5">
+                            <i data-lucide="lightbulb" class="w-4 h-4 text-amber-500"></i> 研究方向：
+                        </span>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">医学图像配准</span>
+                            <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">并行计算性能分析</span>
+                            <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">分类算法优化</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-2 md:items-center">
+                        <span class="font-semibold text-slate-800 whitespace-nowrap w-28 shrink-0 flex items-center gap-1.5">
+                            <i data-lucide="book-open" class="w-4 h-4 text-emerald-500"></i> 研究领域：
+                        </span>
+                        <div class="flex flex-wrap gap-2 text-slate-600">
+                            医学图像处理 • 高性能计算 • 机器学习与深度学习算法
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-2 md:items-center">
+                        <span class="font-semibold text-slate-800 whitespace-nowrap w-28 shrink-0 flex items-center gap-1.5">
+                            <i data-lucide="monitor" class="w-4 h-4 text-indigo-500"></i> 主讲课程：
+                        </span>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm">《操作系统原理》</span>
+                            <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm">《数据库原理》</span>
+                            <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm">《线性代数》</span>
+                            <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm">《算法设计与分析》</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- 经历与教育背景 -->
-        <section id="experience" class="scroll-mt-24">
-            <div class="grid md:grid-cols-2 gap-8">
-                
-                <!-- 工作经历与教学 -->
-                <div class="space-y-8">
-                    <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 h-full">
-                        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                            <i data-lucide="briefcase" class="text-blue-600"></i> 工作经历与教学
-                        </h2>
-                        
-                        <!-- 时间轴 -->
-                        <div class="space-y-6 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:ml-[11px] md:before:w-0.5 before:h-full before:bg-slate-200">
-                            <div class="relative flex items-start space-x-4">
-                                <div class="absolute left-0 mt-1.5 w-4 h-4 rounded-full bg-blue-500 border-4 border-white shadow-sm md:ml-1"></div>
-                                <div class="ml-8 md:ml-10">
-                                    <span class="text-sm font-semibold text-blue-600 block mb-1">2023.07 - 至今</span>
-                                    <h3 class="font-bold text-slate-800 text-lg">汕头大学</h3>
-                                    <p class="text-slate-600">数学与计算机学院 · 讲师</p>
-                                </div>
-                            </div>
-                            <div class="relative flex items-start space-x-4">
-                                <div class="absolute left-0 mt-1.5 w-4 h-4 rounded-full bg-blue-500 border-4 border-white shadow-sm md:ml-1"></div>
-                                <div class="ml-8 md:ml-10">
-                                    <span class="text-sm font-semibold text-blue-600 block mb-1">2021.02 - 2023.06</span>
-                                    <h3 class="font-bold text-slate-800 text-lg">汕头大学</h3>
-                                    <p class="text-slate-600">工学院 · 讲师</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mt-10 pt-6 border-t border-slate-100">
-                            <h3 class="font-semibold text-slate-800 mb-3 flex items-center gap-2">主讲课程</h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm">《操作系统原理》</span>
-                                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm">《数据库原理》</span>
-                                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm">《线性代数》</span>
-                                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm">《算法设计与分析》</span>
-                                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm">《计算机应用基础》</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 教育背景 -->
-                <div class="space-y-8">
-                    <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 h-full">
-                        <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                            <i data-lucide="graduation-cap" class="text-blue-600"></i> 教育背景
-                        </h2>
-                        
-                        <div class="space-y-6 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:ml-[11px] md:before:w-0.5 before:h-full before:bg-slate-200">
-                            <div class="relative flex items-start space-x-4">
-                                <div class="absolute left-0 mt-1.5 w-4 h-4 rounded-full bg-indigo-400 border-4 border-white shadow-sm md:ml-1"></div>
-                                <div class="ml-8 md:ml-10">
-                                    <span class="text-sm font-semibold text-indigo-600 block mb-1">2017.09 - 2020.12</span>
-                                    <h3 class="font-bold text-slate-800 text-lg">深圳大学</h3>
-                                    <p class="text-slate-600">并行信息处理 · <span class="font-medium text-slate-800">博士</span></p>
-                                </div>
-                            </div>
-                            <div class="relative flex items-start space-x-4">
-                                <div class="absolute left-0 mt-1.5 w-4 h-4 rounded-full bg-indigo-400 border-4 border-white shadow-sm md:ml-1"></div>
-                                <div class="ml-8 md:ml-10">
-                                    <span class="text-sm font-semibold text-indigo-600 block mb-1">2015.09 - 2017.06</span>
-                                    <h3 class="font-bold text-slate-800 text-lg">深圳大学</h3>
-                                    <p class="text-slate-600">计算机科学与技术 · <span class="font-medium text-slate-800">硕士</span></p>
-                                </div>
-                            </div>
-                            <div class="relative flex items-start space-x-4">
-                                <div class="absolute left-0 mt-1.5 w-4 h-4 rounded-full bg-indigo-400 border-4 border-white shadow-sm md:ml-1"></div>
-                                <div class="ml-8 md:ml-10">
-                                    <span class="text-sm font-semibold text-indigo-600 block mb-1">2011.09 - 2015.06</span>
-                                    <h3 class="font-bold text-slate-800 text-lg">深圳大学</h3>
-                                    <p class="text-slate-600">计算机科学与技术 · <span class="font-medium text-slate-800">本科</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 科研与教改项目 -->
+        <!-- 教改与科研项目 -->
         <section id="projects" class="scroll-mt-24">
             <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                    <i data-lucide="file-text" class="text-blue-600"></i> 科研与教改项目
+                    <i data-lucide="file-text" class="text-blue-600"></i> 教改与科研项目
                 </h2>
                 
                 <div class="space-y-4">
                     
-                    <!-- 项目 1 -->
+                    <!-- 1. 教改项目 (2025.07) -->
                     <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
                         <div class="flex-1">
-                            <div class="flex items-center gap-3 mb-2 flex-wrap">
-                                <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">多模态心脏影像的跨中心可解释智能诊断：异质协同表征与动态演进研究</h3>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-blue-100 text-blue-700 border-blue-200">主持</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
-                            </div>
-                            <div class="text-sm text-slate-600 space-y-1">
-                                <p><span class="font-medium text-slate-700">项目来源：</span>广东省基础与应用基础研究基金委员会, 广东省自然科学基金项目-面上项目 <span class="text-slate-500">(2026A1515011449)</span></p>
-                                <div class="flex flex-wrap gap-4 pt-1">
-                                    <span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 2026.01 - 2028.12</span>
-                                    <span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 经费：10万元</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 项目 2 -->
-                    <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
-                        <div class="flex-1">
-                            <div class="flex items-center gap-3 mb-2 flex-wrap">
-                                <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">口腔钢丝成型软件开发</h3>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-blue-100 text-blue-700 border-blue-200">主持</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
-                            </div>
-                            <div class="text-sm text-slate-600 space-y-1">
-                                <p><span class="font-medium text-slate-700">项目来源：</span>汕头市进德兴实业有限公司, 技术开发项目 (横向项目)</p>
-                                <div class="flex flex-wrap gap-4 pt-1">
-                                    <span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 2024.03 至今</span>
-                                    <span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 经费：17万元</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 项目 3 -->
-                    <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
-                        <div class="flex-1">
-                            <div class="flex items-center gap-3 mb-2 flex-wrap">
+                            <div class="mb-3">
                                 <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">“师—生—机”协同模式下《算法设计与分析》教学改革研究——以AI动态学情分析与个性化学习为路径</h3>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-blue-100 text-blue-700 border-blue-200">主持 (教改项目)</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-blue-100 text-blue-700 border-blue-200">主持 (教改项目)</span>
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
+                                </div>
                             </div>
                             <div class="text-sm text-slate-600 space-y-1">
                                 <p><span class="font-medium text-slate-700">项目来源：</span>广东省教育厅, 广东省高等教育教学研究和改革项目</p>
@@ -254,31 +155,35 @@
                         </div>
                     </div>
 
-                    <!-- 项目 4 -->
+                    <!-- 2. 科研项目 (2026.01) -->
                     <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
                         <div class="flex-1">
-                            <div class="flex items-center gap-3 mb-2 flex-wrap">
-                                <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">医学图像配准中基于可形变Siamese网络的兴趣点跟踪框架研究</h3>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-blue-100 text-blue-700 border-blue-200">主持</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-200 text-slate-600">结题</span>
+                            <div class="mb-3">
+                                <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">多模态心脏影像的跨中心可解释智能诊断：异质协同表征与动态演进研究</h3>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-blue-100 text-blue-700 border-blue-200">主持</span>
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
+                                </div>
                             </div>
                             <div class="text-sm text-slate-600 space-y-1">
-                                <p><span class="font-medium text-slate-700">项目来源：</span>汕头大学科研启动经费项目</p>
+                                <p><span class="font-medium text-slate-700">项目来源：</span>广东省基础与应用基础研究基金委员会, 广东省自然科学基金项目-面上项目 <span class="text-slate-500">(2026A1515011449)</span></p>
                                 <div class="flex flex-wrap gap-4 pt-1">
-                                    <span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 2021.04 - 2024.03</span>
-                                    <span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 经费：25万元</span>
+                                    <span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 2026.01 - 2028.12</span>
+                                    <span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 经费：10万元</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 项目 5 -->
+                    <!-- 3. 科研项目 (2026.01) -->
                     <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
                         <div class="flex-1">
-                            <div class="flex items-center gap-3 mb-2 flex-wrap">
+                            <div class="mb-3">
                                 <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">知识图谱驱动下AD中医证候-内表型动态关联建模及“方-证-法”映射机制研究</h3>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
+                                </div>
                             </div>
                             <div class="text-sm text-slate-600 space-y-1">
                                 <p><span class="font-medium text-slate-700">项目来源：</span>国家自然科学基金委员会, 面上项目 <span class="text-slate-500">(82575256)</span></p>
@@ -290,13 +195,15 @@
                         </div>
                     </div>
 
-                    <!-- 项目 6 -->
+                    <!-- 4. 科研项目 (2025.01) -->
                     <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
                         <div class="flex-1">
-                            <div class="flex items-center gap-3 mb-2 flex-wrap">
+                            <div class="mb-3">
                                 <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">面向可扩展处理器扩展指令集自动识别的子图枚举算法研究</h3>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
+                                </div>
                             </div>
                             <div class="text-sm text-slate-600 space-y-1">
                                 <p><span class="font-medium text-slate-700">项目来源：</span>广东省自然科学基金项目-面上项目 <span class="text-slate-500">(2025A1515010272)</span></p>
@@ -307,42 +214,16 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- 其他项目归档（使用相同样式快速排列） -->
-                    <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
-                        <div class="flex-1">
-                            <div class="flex items-center gap-3 mb-2 flex-wrap">
-                                <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">基于目标融合与分解的应用服务器集群能耗与性能实时优化研究</h3>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
-                            </div>
-                            <div class="text-sm text-slate-600 space-y-1">
-                                <p><span class="font-medium text-slate-700">项目来源：</span>广东省自然科学基金项目-面上项目 (2024A1515011765)</p>
-                                <div class="flex flex-wrap gap-4 pt-1"><span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 2024.01 - 2026.12</span><span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 经费：15万元</span></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
-                        <div class="flex-1">
-                            <div class="flex items-center gap-3 mb-2 flex-wrap">
-                                <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">面向产品设计的草图式三维造型技术研究</h3>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
-                            </div>
-                            <div class="text-sm text-slate-600 space-y-1">
-                                <p><span class="font-medium text-slate-700">项目来源：</span>广东省科学技术厅, 广东省科技计划项目 (STKJ2023069)</p>
-                                <div class="flex flex-wrap gap-4 pt-1"><span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 2023.02 - 2026.01</span><span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 经费：50万元</span></div>
-                            </div>
-                        </div>
-                    </div>
                     
+                    <!-- 5. 科研项目 (2024.10) -->
                     <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
                         <div class="flex-1">
-                            <div class="flex items-center gap-3 mb-2 flex-wrap">
+                            <div class="mb-3">
                                 <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">区块链中轻量级安全布尔函数研究</h3>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
+                                </div>
                             </div>
                             <div class="text-sm text-slate-600 space-y-1">
                                 <p><span class="font-medium text-slate-700">项目来源：</span>广东省教育厅, 广东省普通高校重点领域专项项目 (2024ZDZX1021)</p>
@@ -351,12 +232,69 @@
                         </div>
                     </div>
 
+                    <!-- 6. 科研项目 (2024.03) -->
                     <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
                         <div class="flex-1">
-                            <div class="flex items-center gap-3 mb-2 flex-wrap">
+                            <div class="mb-3">
+                                <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">口腔钢丝成型软件开发</h3>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-blue-100 text-blue-700 border-blue-200">主持</span>
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
+                                </div>
+                            </div>
+                            <div class="text-sm text-slate-600 space-y-1">
+                                <p><span class="font-medium text-slate-700">项目来源：</span>汕头市进德兴实业有限公司, 技术开发项目 (横向项目)</p>
+                                <div class="flex flex-wrap gap-4 pt-1">
+                                    <span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 2024.03 至今</span>
+                                    <span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 经费：17万元</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. 科研项目 (2024.01) -->
+                    <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
+                        <div class="flex-1">
+                            <div class="mb-3">
+                                <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">基于目标融合与分解的应用服务器集群能耗与性能实时优化研究</h3>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
+                                </div>
+                            </div>
+                            <div class="text-sm text-slate-600 space-y-1">
+                                <p><span class="font-medium text-slate-700">项目来源：</span>广东省自然科学基金项目-面上项目 (2024A1515011765)</p>
+                                <div class="flex flex-wrap gap-4 pt-1"><span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 2024.01 - 2026.12</span><span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 经费：15万元</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. 科研项目 (2023.02) -->
+                    <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
+                        <div class="flex-1">
+                            <div class="mb-3">
+                                <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">面向产品设计的草图式三维造型技术研究</h3>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
+                                </div>
+                            </div>
+                            <div class="text-sm text-slate-600 space-y-1">
+                                <p><span class="font-medium text-slate-700">项目来源：</span>广东省科学技术厅, 广东省科技计划项目 (STKJ2023069)</p>
+                                <div class="flex flex-wrap gap-4 pt-1"><span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 2023.02 - 2026.01</span><span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 经费：50万元</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 9. 科研项目 (2023.01) -->
+                    <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
+                        <div class="flex-1">
+                            <div class="mb-3">
                                 <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">面向智能物联网服务推荐的云边协同机制研究</h3>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">在研</span>
+                                </div>
                             </div>
                             <div class="text-sm text-slate-600 space-y-1">
                                 <p><span class="font-medium text-slate-700">项目来源：</span>广东省教育厅, 广东省普通高校重点领域专项项目 (2022ZDZX1008)</p>
@@ -365,12 +303,15 @@
                         </div>
                     </div>
 
+                    <!-- 10. 科研项目 (2023.01) -->
                     <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
                         <div class="flex-1">
-                            <div class="flex items-center gap-3 mb-2 flex-wrap">
+                            <div class="mb-3">
                                 <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">高层次融合设计空间高效探索关键技术研究</h3>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-200 text-slate-600">结题</span>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-200 text-slate-600">结题</span>
+                                </div>
                             </div>
                             <div class="text-sm text-slate-600 space-y-1">
                                 <p><span class="font-medium text-slate-700">项目来源：</span>广东省自然科学基金项目-面上项目 (2023A1515010077)</p>
@@ -379,12 +320,15 @@
                         </div>
                     </div>
 
+                    <!-- 11. 科研项目 (2022.01) -->
                     <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
                         <div class="flex-1">
-                            <div class="flex items-center gap-3 mb-2 flex-wrap">
+                            <div class="mb-3">
                                 <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">基于动力学特征城市功能分区与路网融合的交通流预测研究</h3>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-200 text-slate-600">结题</span>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-200 text-slate-600">结题</span>
+                                </div>
                             </div>
                             <div class="text-sm text-slate-600 space-y-1">
                                 <p><span class="font-medium text-slate-700">项目来源：</span>广东省自然科学基金项目-面上项目 (2022A1515011590)</p>
@@ -393,12 +337,15 @@
                         </div>
                     </div>
 
+                    <!-- 12. 科研项目 (2022.01) -->
                     <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
                         <div class="flex-1">
-                            <div class="flex items-center gap-3 mb-2 flex-wrap">
+                            <div class="mb-3">
                                 <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">保密度-无散度耦合流体模拟方法及其在血栓生理特性问题中的应用</h3>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-200 text-slate-600">结题</span>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-200 text-slate-600">结题</span>
+                                </div>
                             </div>
                             <div class="text-sm text-slate-600 space-y-1">
                                 <p><span class="font-medium text-slate-700">项目来源：</span>广东省自然科学基金项目-面上项目 (2022A1515011978)</p>
@@ -407,12 +354,15 @@
                         </div>
                     </div>
 
+                    <!-- 13. 科研项目 (2021.07) -->
                     <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
                         <div class="flex-1">
-                            <div class="flex items-center gap-3 mb-2 flex-wrap">
+                            <div class="mb-3">
                                 <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">基于网络距离邻近算法的药物毒性研究</h3>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
-                                <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-200 text-slate-600">结题</span>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-slate-200 text-slate-700 border-slate-300">参与</span>
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-200 text-slate-600">结题</span>
+                                </div>
                             </div>
                             <div class="text-sm text-slate-600 space-y-1">
                                 <p><span class="font-medium text-slate-700">项目来源：</span>汕头大学科研启动经费项目</p>
@@ -420,6 +370,27 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- 14. 科研项目 (2021.04) -->
+                    <div class="group p-5 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50">
+                        <div class="flex-1">
+                            <div class="mb-3">
+                                <h3 class="font-bold text-slate-800 text-lg leading-snug group-hover:text-blue-700 transition-colors">医学图像配准中基于可形变Siamese网络的兴趣点跟踪框架研究</h3>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium border bg-blue-100 text-blue-700 border-blue-200">主持</span>
+                                    <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-200 text-slate-600">结题</span>
+                                </div>
+                            </div>
+                            <div class="text-sm text-slate-600 space-y-1">
+                                <p><span class="font-medium text-slate-700">项目来源：</span>汕头大学科研启动经费项目</p>
+                                <div class="flex flex-wrap gap-4 pt-1">
+                                    <span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 2021.04 - 2024.03</span>
+                                    <span class="flex items-center gap-1"><i data-lucide="chevron-right" class="w-3 h-3"></i> 经费：25万元</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
